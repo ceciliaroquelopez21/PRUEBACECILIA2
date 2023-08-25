@@ -14,7 +14,7 @@ import java.lang.reflect.Field;
 
 public class DefaultUser extends ScenarioSteps {
 
-    @Steps
+    /* @Steps */
     private PracticeFormPage page;
 
     static class PageContainer {
@@ -30,7 +30,7 @@ public class DefaultUser extends ScenarioSteps {
         }
     }
 
-    @Step
+  /* @Steps */
     public PageObject goToPage(Class<PageObject> pageClass) {
         PageObject page = getPages().get(pageClass);
         page.open();
@@ -38,7 +38,7 @@ public class DefaultUser extends ScenarioSteps {
         return page;
     }
 
-    @Step
+/* @Steps */
     public PageObject goToPage(Class<PageObject> pageClass, String method, String[] params) {
         PageObject page = getPages().get(pageClass);
         page.open(method, params);
@@ -46,7 +46,7 @@ public class DefaultUser extends ScenarioSteps {
         return page;
     }
 
-    @Step
+ /* @Steps */
     public void clicksOn(String elementName) throws IllegalAccessException {
         ((JavascriptExecutor)getDriver()).executeScript(
                 "arguments[0].scrollIntoView();arguments[0].click()",
