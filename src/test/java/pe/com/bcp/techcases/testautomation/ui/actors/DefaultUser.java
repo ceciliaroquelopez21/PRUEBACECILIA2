@@ -14,7 +14,7 @@ import java.lang.reflect.Field;
 
 public class DefaultUser extends ScenarioSteps {
 
-    /* @Steps */
+    /* @Steps  */
     private PracticeFormPage page;
 
     static class PageContainer {
